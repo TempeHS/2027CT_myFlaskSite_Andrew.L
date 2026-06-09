@@ -32,8 +32,8 @@ block content %}
         alt="Welcome"
       />
       <div class="carousel-caption d-none d-md-block">
-        <h2>Welcome Doge tutoring</h2>
-        <p>Discover what occupations our Doges have gone to.</p>
+        <h2>Welcome to My Site</h2>
+        <p>Discover what we have to offer.</p>
       </div>
     </div>
 
@@ -45,7 +45,7 @@ block content %}
         alt="Features"
       />
       <div class="carousel-caption d-none d-md-block">
-        <h2>Every occupations can be learnt.</h2>
+        <h2>Amazing Features</h2>
         <p>Built with Flask and Bootstrap.</p>
       </div>
     </div>
@@ -59,7 +59,7 @@ block content %}
       />
       <div class="carousel-caption d-none d-md-block">
         <h2>Get in Touch</h2>
-        <p>We'd love a new Doge student.</p>
+        <p>We'd love to hear from you.</p>
       </div>
     </div>
   </div>
@@ -90,12 +90,71 @@ block content %}
   <h1>Welcome!</h1>
   <p class="lead">This site is built with Flask and Bootstrap.</p>
 </div>
-{% endblock %}
 
-<div class="carousel-caption d-none d-md-block">
-  <h2>Welcome to My Site</h2>
-  <p>Discover what we have to offer.</p>
-  <a href="{{ url_for('contact') }}" class="btn btn-primary btn-lg"
-    >Learn More</a
-  >
-</div>
+<!-- Feature Cards Section -->
+<section class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">What we give</h2>
+
+    <div class="row">
+      <!-- Card 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <img
+            src="{{ url_for('static', filename='images/feature1.jpg') }}"
+            class="card-img-top"
+            alt="Feature 1"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Become food.</h5>
+            <p class="card-text">
+              Our Doges here, have the ability to achieve anything they dream
+              for.
+            </p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <img
+            src="{{ url_for('static', filename='images/feature2.jpg') }}"
+            class="card-img-top"
+            alt="Feature 2"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Enter The Guinness book of records.</h5>
+            <p class="card-text">
+              Our Doges here are only taught discipline and resilience.
+            </p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <img
+            src="{{ url_for('static', filename='images/feature3.jpg') }}"
+            class="card-img-top"
+            alt="Feature 3"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Serve the country.</h5>
+            <p class="card-text">
+              Our Doges here are the animals that run this country into the
+              future. Sending peace and prosperity in the world.
+            </p>
+            <a href="{{ url_for('contact') }}" class="btn btn-primary"
+              >Contact Us</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
