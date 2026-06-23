@@ -2,6 +2,7 @@
 
 body {
   padding-top: 70px; /* Space for fixed navbar */
+  background: rgba(255, 255, 255, 0.5);
 }
 
 /* Hero Carousel Styles */
@@ -114,4 +115,15 @@ section h2 {
 .contact-form .form-label {
   font-weight: 500;
   margin-bottom: 5px;
+}
+
+/* font size */
+.navbar .navbar-brand {
+  font-size: 1.6rem;
+}
+
+.navbar .nav-link {
+  font-size: 1.2rem;
+  padding-left: 0.75rem;
+  padding-right: 3.75rem;
 }

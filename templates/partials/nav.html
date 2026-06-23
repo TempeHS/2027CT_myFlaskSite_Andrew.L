@@ -1,7 +1,7 @@
 <!-- Navigation menu will go here -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
   <div class="container">
-    <a class="navbar-brand" href="{{ url_for('home') }}">My Flask Site</a>
+    <a class="navbar-brand" href="{{ url_for('home') }}">Du bist gut genug </a>
     <button
       class="navbar-toggler"
       type="button"
@@ -25,19 +25,3 @@
     </div>
   </div>
 </nav>
-<ul class="navbar-nav ms-auto">
-  <li class="nav-item">
-    <a
-      class="nav-link {% if request.endpoint == 'home' %}active{% endif %}"
-      href="{{ url_for('home') }}"
-      >Home</a
-    >
-  </li>
-  <li class="nav-item">
-    <a
-      class="nav-link {% if request.endpoint == 'contact' %}active{% endif %}"
-      href="{{ url_for('contact') }}"
-      >Contact</a
-    >
-  </li>
-</ul>
