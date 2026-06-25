@@ -1,16 +1,16 @@
 {% extends 'base.html' %} {% block title %}Contact - My Flask Site{% endblock %}
 {% block content %}
 <div class="container py-5">
-  <h1 class="text-center mb-5">YOYOLGLGO</h1>
+  <h1 class="text-center mb-5">Jonkler</h1>
 
   <div class="row">
     <!-- Map Column -->
     <div class="col-lg-6 mb-4">
       <div class="map-container">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3308.9983413819805!2d151.100497176558!3d-33.96688212414706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12b9bd3c8486f5%3A0xebc959082373e03f!2sDr.%20Du%20Education%20-%20Hurstville%20Campus!5e0!3m2!1sen!2sau!4v1781142855109!5m2!1sen!2sau"
+        <img
+          src="{{ url_for('static', filename='images/services1.jpg') }}"
           width="100%"
-          height="400"
+          height="600"
           style="border: 0"
           allowfullscreen=""
           loading="lazy"
@@ -23,9 +23,9 @@
         <h4>Other Ways to Reach Us</h4>
         <ul class="list-unstyled mb-0">
           <li class="mb-2">
-            <strong>📍</strong> Level 5/288 Forest Rd, Hurstville NSW 2220
+            <strong>📍</strong> Bradleys Head Road, Mosman, NSW 2088
           </li>
-          <li class="mb-2"><strong>📞</strong> (02) 1234 5678</li>
+          <li class="mb-2"><strong>📞</strong> (02) 9969 2777</li>
           <li>
             <strong>✉️</strong>
             <a href="mailto:info@myflasksite.com">info@myflasksite.com</a>
@@ -34,68 +34,25 @@
       </div>
     </div>
 
-    <!-- Form Column -->
+    <!-- Read-Only Text Block -->
     <div class="col-lg-6 mb-4">
       <div class="contact-form">
-        <h4 class="mb-4">Send us a Message</h4>
+        <h4 class="mb-4">Who Is He?</h4>
 
-        <form action="#" method="POST">
-          <!-- Name Field -->
-          <div class="mb-3">
-            <label for="name" class="form-label">Your Name *</label>
-            <input
-              type="text"
-              class="form-control"
-              id="name"
-              name="name"
-              placeholder="Anderdingus"
-              required
-            />
-          </div>
+  <div class="mb-3">
+          <label for="cayenne-info" class="form-label">Information</label>
+          <textarea class="form-control" id="cayenne-info" rows="20" readonly>The Jonkler is an intentional misspelling of The Joker, usually referring to him as he appears in the Batman: Arkham series of video games, in the /r/BatmanArkham subreddit. Posts about the "Jonkler" will usually be written in broken or grammatically incorrect English, picking up from the Is He Stupid? that grew popular in the sub. The meme eventually gave rise to the Evil Jonkler Cart meme in 2024. "Is He Stupid?" is a catchphrase and phrasal template that started on the /r/okbuddychicanery subreddit in which users ironically ask about certain plot details of the Breaking Bad universe lore. The meme grew widely popular on /r/BatmanArkham, and was adopted for many jokes in the sub.
 
-          <!-- Email Field -->
-          <div class="mb-3">
-            <label for="email" class="form-label">Email Address *</label>
-            <input
-              type="email"
-              class="form-control"
-              id="email"
-              name="email"
-              placeholder="anderdingus@example.com"
-              required
-            />
-          </div>
-
-          <!-- Subject Field -->
-          <div class="mb-3">
-            <label for="subject" class="form-label">Subject</label>
-            <select class="form-select" id="subject" name="subject">
-              <option value="" selected>Choose a topic...</option>
-              <option value="general">General Inquiry</option>
-              <option value="support">Support</option>
-              <option value="feedback">Feedback</option>
-              <option value="other">Other</option>
-            </select>
-          </div>
-
-          <!-- Message Field -->
-          <div class="mb-3">
-            <label for="message" class="form-label">Message *</label>
-            <textarea
-              class="form-control"
-              id="message"
-              name="message"
-              rows="5"
-              placeholder="How can we help you?"
-              required
-            ></textarea>
-          </div>
-
-          <!-- Submit Button -->
-          <button type="submit" class="btn btn-primary btn-lg w-100">
-            Send Message
-          </button>
-        </form>
+On February 5th, 2023, Redditor u/Encajado shared a picture of a Batman: Arkham Knight scene in which Batman is looking over the city after the villain Scarecrow activated a device that shrouded the entire city in a deadly fear gas. User u/Encajado added the image in the lore recap section of the /r/BatmanArkham subreddit with the caption "Why doesn't Batman just call the Justice League for help? Is he stupid?" The post received 5,500 upvotes and 550 comments in one month (seen below).</textarea>
+        </div>
+        <div class="mt-4">
+  <h5>Related Links</h5>
+  <ul class="list-unstyled">
+    <li><a href="https://knowyourmeme.com/memes/the-jonkler" target="_blank" rel="noopener">Know Your Memes</a></li>
+    <li><a href="https://www.quora.com/Who-is-Jonkler" target="_blank" rel="noopener">Know Your Meme</a></li>
+    <li><a href="{{ url_for('home') }}">Back to Home</a></li>
+  </ul>
+</div>
       </div>
     </div>
   </div>

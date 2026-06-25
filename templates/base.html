@@ -33,8 +33,35 @@
 
     {% block extra_js %}{% endblock %}
     <footer class="site-footer">
-      <div class="container">
-        <small>&copy; 2026 My Flask Site</small>
+      <div class="container py-2">
+        <div class="d-flex justify-content-between align-items-center gap-3">
+          <div class="d-flex w-50 gap-3">
+            <a class="nav-link p-0" href="{{ url_for('information') }}"
+              >Log In | Sign Up</a
+            >
+            <a class="nav-link p-0" href="{{ url_for('contact') }}"
+              >Finding An Article?</a
+            >
+          </div>
+
+          <form
+            class="d-flex w-50 mb-0"
+            role="search"
+            method="GET"
+            action="/search"
+          >
+            <input
+              class="form-control me-2"
+              type="search"
+              name="q"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
   </body>

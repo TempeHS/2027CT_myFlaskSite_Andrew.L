@@ -23,5 +23,20 @@ def information():
     return render_template("information.html")
 
 
+@app.route("/signup")
+def signup():
+    return render_template("signup.html")
+
+
+@app.route("/articlefinder")
+def articlefinder():
+    return render_template("articlefinder.html")
+
+
+@app.route("/resultspage")
+def resultspage():
+    return render_template("resultspage.html")
+
+
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000, debug=True)
