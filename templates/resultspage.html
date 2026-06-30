@@ -4,4 +4,75 @@ content %}
   <h1>Search Results</h1>
   <p>You searched for: <strong>{{ query }}</strong></p>
 </div>
-{% endblock %}
+
+<!-- Feature Cards Section -->
+<section class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">What We Give</h2>
+
+    <div class="row">
+      <!-- Card 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <img
+            src="{{ url_for('static', filename='images/feature1.jpg') }}"
+            class="card-img-top"
+            alt="Feature 1"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Become Food.</h5>
+            <p class="card-text">
+              Our Doges here, have the ability to achieve anything they dream
+              for.
+            </p>
+            <a href="{{ url_for('services') }}" class="btn btn-primary"
+              >Learn food</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <img
+            src="{{ url_for('static', filename='images/feature2.jpg') }}"
+            class="card-img-top"
+            alt="Feature 2"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Enter The Guinness Book Of Records.</h5>
+            <p class="card-text">
+              Our Doges here are only taught discipline and resilience.
+            </p>
+            <a href="{{ url_for('information') }}" class="btn btn-primary"
+              >Learn More</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <img
+            src="{{ url_for('static', filename='images/feature3.jpg') }}"
+            class="card-img-top"
+            alt="Feature 3"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Serve The Country.</h5>
+            <p class="card-text">
+              Our Doges here are the animals that run this country into the
+              future. Sending peace and prosperity in the world.
+            </p>
+            <a href="{{ url_for('contact') }}" class="btn btn-primary"
+              >Contact Us</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% include 'partials/footer.html' %} {% endblock %}

@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
@@ -35,7 +35,8 @@ def articlefinder():
 
 @app.route("/resultspage")
 def resultspage():
-    return render_template("resultspage.html")
+    query = request.args.get("q", "").strip()
+    return render_template("resultspage.html", query=query)
 
 
 if __name__ == "__main__":
