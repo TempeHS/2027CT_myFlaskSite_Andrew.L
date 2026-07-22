@@ -2,7 +2,7 @@
 
 body {
   padding-top: 70px; /* Space for fixed navbar */
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(241, 241, 241, 0.5);
 }
 
 /* Hero Carousel Styles */
@@ -12,7 +12,7 @@ body {
 }
 
 .carousel-caption {
-  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  background: rgba(245, 9, 9, 0.5); /* Semi-transparent background */
   padding: 20px;
   border-radius: 10px;
 }
@@ -46,7 +46,8 @@ body {
 }
 
 .card-img-top {
-  height: 250px;
+  height: 300px;
+  width: 635px;
   object-fit: cover;
 }
 

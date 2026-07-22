@@ -33,6 +33,16 @@ def articlefinder():
     return render_template("articlefinder.html")
 
 
+@app.route("/gaming1")
+def gaming1():
+    return render_template("gaming1.html")
+
+
+@app.route("/movie1")
+def movie1():
+    return render_template("movie1.html")
+
+
 @app.route("/resultspage")
 def resultspage():
     query = request.args.get("q", "").strip()
