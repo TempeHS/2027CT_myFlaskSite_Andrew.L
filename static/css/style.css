@@ -133,3 +133,23 @@ section h2 {
   padding-left: 0.75rem;
   padding-right: 3.75rem;
 }
+
+.row-1 {
+  background-color: #eb9822;
+  padding: 1rem 0;
+}
+
+.row-2 {
+  background-color: #e8f4f8;
+  padding: 1rem 0;
+}
+
+.row-3 {
+  background-color: #f0e8f8;
+  padding: 1rem 0;
+}
+
+/* Footer colour */
+.footer-background {
+  padding: 30px;
+  background-color: #d5cfcf;
