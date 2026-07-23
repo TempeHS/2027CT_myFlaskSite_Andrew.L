@@ -2,7 +2,7 @@
 
 body {
   padding-top: 55px; /* Space for fixed navbar */
-  background: rgba(241, 241, 241, 0.5);
+  background: rgba(209, 209, 209, 0.5);
 }
 
 /* Hero Carousel Styles */
@@ -151,5 +151,19 @@ section h2 {
 
 /* Footer colour */
 .footer-background {
-  padding: 30px;
-  background-color: #d5cfcf;
+  padding: 20px 30px;
+  background-color: #ffffff;
+}
+
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition:
+    opacity 0.6s ease-out,
+    transform 0.6s ease-out;
+}
+
+.scroll-reveal.show {
+  opacity: 1;
+  transform: translateY(0);
+}
