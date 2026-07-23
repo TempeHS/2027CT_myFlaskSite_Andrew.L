@@ -1,13 +1,13 @@
 /* Custom styles for My Flask Site */
 
 body {
-  padding-top: 70px; /* Space for fixed navbar */
+  padding-top: 55px; /* Space for fixed navbar */
   background: rgba(241, 241, 241, 0.5);
 }
 
 /* Hero Carousel Styles */
 .carousel-item img {
-  height: 500px;
+  height: 180px;
   object-fit: cover; /* Crop images to fit */
 }
 
