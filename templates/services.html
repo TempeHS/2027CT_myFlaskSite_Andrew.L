@@ -1,11 +1,11 @@
 {% extends 'base.html' %} {% block title %}Contact - My Flask Site{% endblock %}
 {% block content %}
 <div class="container py-5">
-  <h1 class="text-center mb-5">Jonkler</h1>
+  <h1 class="text-center mb-5 scroll-reveal">Jonkler</h1>
 
   <div class="row">
     <!-- Map Column -->
-    <div class="col-lg-6 mb-4">
+    <div class="col-lg-6 mb-4 scroll-reveal">
       <div class="map-container">
         <img
           src="{{ url_for('static', filename='images/services1.jpg') }}"
@@ -35,7 +35,7 @@
     </div>
 
     <!-- Read-Only Text Block -->
-    <div class="col-lg-6 mb-4">
+    <div class="col-lg-6 mb-4 scroll-reveal">
       <div class="contact-form">
         <h4 class="mb-4">Who Is He?</h4>
 
@@ -57,4 +57,22 @@ On February 5th, 2023, Redditor u/Encajado shared a picture of a Batman: Arkham 
     </div>
   </div>
 </div>
-{% endblock %}
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const revealItems = document.querySelectorAll(".scroll-reveal");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          entry.target.classList.toggle("show", entry.isIntersecting);
+        });
+      },
+      { threshold: 0.2 }
+    );
+
+    revealItems.forEach((item) => observer.observe(item));
+  });
+</script>
+
+  {% include 'partials/footer.html' %}{% endblock %}
