@@ -1,0 +1,82 @@
+{% extends 'base.html' %} {% block title %}Contact - My Flask Site{% endblock %}
+{% block content %}
+<div class="container py-5">
+  <h1 class="text-center mb-5 scroll-reveal">Anderdingus</h1>
+
+  <div class="row">
+    <!-- Map Column -->
+    <div class="col-lg-6 mb-4 scroll-reveal">
+      <div class="map-container">
+        <img
+          src="{{ url_for('static', filename='images/information1.jpg') }}"
+          width="100%"
+          height="600"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        >
+        </iframe>
+      </div>
+
+      <!-- Contact Info (moved below map) -->
+      <div class="contact-info mt-4">
+        <h4>Other Ways to Reach Us</h4>
+        <ul class="list-unstyled mb-0">
+          <li class="mb-2">
+            <strong>📍</strong> Bradleys Head Road, Mosman, NSW 2088
+          </li>
+          <li class="mb-2"><strong>📞</strong> (02) 9969 2777</li>
+          <li>
+            <strong>✉️</strong>
+            <a href="mailto:info@myflasksite.com">info@myflasksite.com</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Read-Only Text Block -->
+    <div class="col-lg-6 mb-4 scroll-reveal">
+      <div class="contact-form">
+        <h4 class="mb-4">My name is Anderdingus</h4>
+
+  <div class="mb-3">
+          <label for="cayenne-info" class="form-label">Information</label>
+          <textarea class="form-control" id="cayenne-info" rows="20" readonly>The first full trailer for Marvel Studios’ “Avengers: Doomsday” reportedly amassed a jaw-dropping 503 million views in 24 hours according to Variety. This makes it the second-biggest movie trailer launch of all time, behind only Sony’s Marvel film “Spider-Man: Brand New Day” at 719 million views.
+
+That’s not the only record it broke. It was also easily Disney’s most-viewed trailer in history, surpassing “Deadpool & Wolverine,” which had 365 million views – a number boosted by including the Super Bowl broadcast.
+
+It also surpassed the release of the “Grand Theft Auto VI” trailer in May, which pulled in 475 million views.
+
+The trailer was released at the same time pre-sales for the film went online, or more specifically only the pre-sales for the non-IMAX ‘InfinityVision’ premium screens showing the film. These cinemas, which domestically make up around 1,000 screens of the film’s expected 4,000-screen opening weekend footprint, reportedly generated $16.5 million in advance ticket sales after the first day of availability.</textarea>
+        </div>
+        <div class="mt-4">
+  <h5>Related Links</h5>
+  <ul class="list-unstyled">
+    <li><a href="https://filmspeak.net/news-2/2026/7/21/doomsday-approaches-first-trailer-for-latest-avengers-picture-drops-amid-a-tumultuous-development-process" target="_blank" rel="noopener">Filmspeak</a></li>
+    <li><a href="https://au.variety.com/2026/film/news/avengers-doomsday-trailer-views-disney-record-38772/" target="_blank" rel="noopener">Variety Australia</a></li>
+    <li><a href="{{ url_for('movie2') }}">Back to Movie News</a></li>
+  </ul>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const revealItems = document.querySelectorAll(".scroll-reveal");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          entry.target.classList.toggle("show", entry.isIntersecting);
+        });
+      },
+      { threshold: 0.2 }
+    );
+
+    revealItems.forEach((item) => observer.observe(item));
+  });
+</script>
+
+  {% include 'partials/footer.html' %}{% endblock %}
