@@ -2,12 +2,6 @@
 <nav class="navbar navbar-expand-lg nav-background fixed-top">
   <div class="container">
     <a class="navbar-brand" href="{{ url_for('home') }}">MediON </a>
-    <img
-      src="{{ url_for('static', filename='css/images/logo.png') }}"
-      alt="MediON logo"
-      height="30"
-      class="me-2"
-    />
     <button
       class="navbar-toggler"
       type="button"
@@ -31,48 +25,75 @@
           <a class="nav-link" href="{{ url_for('contact') }}">Contact</a>
         </li>
       </ul>
- <!-- Theme dropdown -->
-                <ul class="navbar-nav ms-2">
-                  <li class="nav-item dropdown">
-                    <button
-                      class="btn btn-link nav-link dropdown-toggle d-flex align-items-center"
-                      id="bd-theme"
-                      type="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                      aria-label="Toggle theme"
-                    >
-                      <i class="bi bi-circle-half me-1"></i>
-                      <span id="bd-theme-text">Theme</span>
-                    </button>
-                    <ul
-                      class="dropdown-menu dropdown-menu-end"
-                      aria-labelledby="bd-theme"
-                    >
-                      <li>
-                        <button
-                          type="button"
-                          class="dropdown-item d-flex justify-content-center align-items-center fw-bold"
-                          data-bs-theme-value="light"
-                        >
-                          <i class="bi bi-sun-fill me-2"></i> Light
-                        </button>
-                      </li>
-                      <li>
-                        <button
-                          type="button"
-                          class="dropdown-item justify-content-center d-flex align-items-center fw-bold"
-                          data-bs-theme-value="dark"
-                        >
-                          <i class="bi bi-moon-stars-fill me-2"></i> Dark
-                        </button>
-                      </li>
-                      <li>
-                        </button>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
+      <!-- Theme dropdown -->
+      <ul class="navbar-nav ms-2">
+        <li class="nav-item dropdown">
+          <button
+            class="btn btn-link nav-link dropdown-toggle d-flex align-items-center"
+            id="bd-theme"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+            aria-label="Toggle theme"
+          >
+            <i class="bi bi-circle-half me-1"></i>
+            <span id="bd-theme-text">Theme</span>
+          </button>
+          <ul
+            class="dropdown-menu dropdown-menu-end"
+            aria-labelledby="bd-theme"
+          >
+            <li>
+              <button
+                type="button"
+                class="dropdown-item d-flex justify-content-center align-items-center fw-bold"
+                data-bs-theme-value="light"
+              >
+                <i class="bi bi-sun-fill me-2"></i> Light
+              </button>
+            </li>
+            <li>
+              <button
+                type="button"
+                class="dropdown-item justify-content-center d-flex align-items-center fw-bold"
+                data-bs-theme-value="dark"
+              >
+                <i class="bi bi-moon-stars-fill me-2"></i> Dark
+              </button>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<script>
+  (() => {
+    const getStoredTheme = () => localStorage.getItem("theme");
+    const setStoredTheme = (theme) => localStorage.setItem("theme", theme);
+
+    const getPreferredTheme = () => {
+      const storedTheme = getStoredTheme();
+      if (storedTheme) return storedTheme;
+      return window.matchMedia("(prefers-color-scheme: dark)").matches
+        ? "dark"
+        : "light";
+    };
+
+    const setTheme = (theme) => {
+      document.documentElement.setAttribute("data-bs-theme", theme);
+    };
+
+    setTheme(getPreferredTheme());
+
+    document.addEventListener("DOMContentLoaded", () => {
+      document.querySelectorAll("[data-bs-theme-value]").forEach((toggle) => {
+        toggle.addEventListener("click", () => {
+          const theme = toggle.getAttribute("data-bs-theme-value");
+          setStoredTheme(theme);
+          setTheme(theme);
+        });
+      });
+    });
+  })();
+</script>

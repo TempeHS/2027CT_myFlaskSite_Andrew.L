@@ -158,6 +158,11 @@ section {
   background-repeat: no-repeat;
 }
 
+/* MediON logo */
+.logo {
+  background-image: url("/static/images/logo.png");
+}
+
 .row-1 {
   background-color: #eb9822;
   padding: 1rem 0;
