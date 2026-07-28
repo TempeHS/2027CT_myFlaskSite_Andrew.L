@@ -45,7 +45,7 @@ block content %}
         class="d-block w-100"
         alt="Features"
       />
-      <div class="carousel-caption d-none d-md-block">
+      <div class="carousel-caption d-none d-md-block scroll-reveal">
         <h2>Check out the weekly gaming news</h2>
         <p>18/06/26</p>
       </div>
@@ -58,7 +58,7 @@ block content %}
         class="d-block w-100"
         alt="Contact"
       />
-      <div class="carousel-caption d-none d-md-block">
+      <div class="carousel-caption d-none d-md-block scroll-reveal">
         <h2>Check out the weekly movie news</h2>
         <p>18/06/26</p>
       </div>
@@ -114,7 +114,6 @@ block content %}
           </div>
         </div>
       </div>
-
       <!-- Card 2 -->
       <div class="col-md-6 mb-6">
         <div class="card h-150 scroll-reveal">
@@ -136,98 +135,97 @@ block content %}
       </div>
     </div>
   </div>
-  <sector></sector>
+</section>
 
-  <!-- Bottom Feature Cards Section -->
-  <section class="py-5">
-    <div class="container">
-      <h2 class="text-center mb-4 scroll-reveal">
-        The Hottest Events This Week.
-      </h2>
+<!-- Bottom Feature Cards Section -->
+<section class="py-5 section-bottom">
+  <div class="container">
+    <h2 class="text-center mb-4 scroll-reveal">
+      The Hottest Events This Week.
+    </h2>
 
-      <div class="row">
-        <!-- Card 1 -->
-        <div class="col-md-4 mb-4">
-          <div class="card h-100 scroll-reveal">
-            <img
-              src="{{ url_for('static', filename='images/feature1.jpg') }}"
-              class="card-img-bottom"
-              alt="Feature 1"
-            />
-            <div class="card-body">
-              <h5 class="card-title">'The Odyssey' Releases! (16/07)</h5>
-              <p class="card-text">
-                Christopher Nolan officially releases The Odyssey on the 16th of
-                July, containing big names like Zendaya and Tom Holland.
-              </p>
-              <a href="{{ url_for('services') }}" class="btn btn-primary"
-                >Learn food</a
-              >
-            </div>
+    <div class="row">
+      <!-- Card 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 scroll-reveal">
+          <img
+            src="{{ url_for('static', filename='images/feature1.jpg') }}"
+            class="card-img-bottom"
+            alt="Feature 1"
+          />
+          <div class="card-body">
+            <h5 class="card-title">'The Odyssey' Releases! (16/07)</h5>
+            <p class="card-text">
+              Christopher Nolan officially releases The Odyssey on the 16th of
+              July, containing big names like Zendaya and Tom Holland.
+            </p>
+            <a href="{{ url_for('services') }}" class="btn btn-primary"
+              >Learn food</a
+            >
           </div>
         </div>
+      </div>
 
-        <!-- Card 2 -->
-        <div class="col-md-4 mb-4">
-          <div class="card h-100 scroll-reveal">
-            <img
-              src="{{ url_for('static', filename='images/feature2.jpg') }}"
-              class="card-img-bottom"
-              alt="Feature 2"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Avengers Doomsday News (22/07)</h5>
-              <p class="card-text">
-                The First Trailer for Avengers Doomsday Has Officially Released
-                on the 20th of July.
-              </p>
-              <a href="{{ url_for('information') }}" class="btn btn-primary"
-                >Learn More</a
-              >
-            </div>
+      <!-- Card 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 scroll-reveal">
+          <img
+            src="{{ url_for('static', filename='images/feature2.jpg') }}"
+            class="card-img-bottom"
+            alt="Feature 2"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Avengers Doomsday News (22/07)</h5>
+            <p class="card-text">
+              The First Trailer for Avengers Doomsday Has Officially Released on
+              the 20th of July.
+            </p>
+            <a href="{{ url_for('information') }}" class="btn btn-primary"
+              >Learn More</a
+            >
           </div>
         </div>
+      </div>
 
-        <!-- Card 3 -->
-        <div class="col-md-4 mb-4">
-          <div class="card h-100 scroll-reveal">
-            <img
-              src="{{ url_for('static', filename='images/feature3.jpg') }}"
-              class="card-img-bottom"
-              alt="Feature 3"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Insomniac's Wolverine (17/07)</h5>
-              <p class="card-text">
-                Teasers released from the 17th of July, suggest a new appearing
-                foe in the upcoming Wolverine game.
-              </p>
-              <a href="{{ url_for('information2') }}" class="btn btn-primary"
-                >Contact Us</a
-              >
-            </div>
+      <!-- Card 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 scroll-reveal">
+          <img
+            src="{{ url_for('static', filename='images/feature3.jpg') }}"
+            class="card-img-bottom"
+            alt="Feature 3"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Insomniac's Wolverine (17/07)</h5>
+            <p class="card-text">
+              Teasers released from the 17th of July, suggest a new appearing
+              foe in the upcoming Wolverine game.
+            </p>
+            <a href="{{ url_for('information2') }}" class="btn btn-primary"
+              >Contact Us</a
+            >
           </div>
         </div>
       </div>
     </div>
-  </section>
-  </section>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const revealItems = document.querySelectorAll(".scroll-reveal");
-
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            entry.target.classList.toggle("show", entry.isIntersecting);
-          });
-        },
-        { threshold: 0.2 },
-      );
-
-      revealItems.forEach((item) => observer.observe(item));
-    });
-  </script>
-  {% include 'partials/footer.html' %} {% endblock %}
+  </div>
 </section>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const revealItems = document.querySelectorAll(".scroll-reveal");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          entry.target.classList.toggle("show", entry.isIntersecting);
+        });
+      },
+      { threshold: 0.2 },
+    );
+
+    revealItems.forEach((item) => observer.observe(item));
+  });
+</script>
+
+{% include 'partials/footer.html' %} {% endblock %} >

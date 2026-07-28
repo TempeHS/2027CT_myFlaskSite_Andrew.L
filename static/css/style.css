@@ -2,7 +2,7 @@
 
 body {
   padding-top: 55px; /* Space for fixed navbar */
-  background: rgba(209, 209, 209, 0.5);
+  background: rgba(15, 15, 15, 0.5);
 }
 
 /* Hero Carousel Styles */
@@ -64,10 +64,18 @@ body {
 
 /* Section Styles */
 section {
-  background-color: #f9f9f9b4;
+  background-color: rgba(255, 255, 255, 0.706);
 }
 
-section h2 {
+/* Section Styles */
+.section-bottom {
+  background-image: url("/static/css/images/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.section h2 {
   font-weight: bold;
 }
 
