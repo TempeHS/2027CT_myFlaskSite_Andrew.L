@@ -69,10 +69,7 @@ section {
 
 /* Section Styles */
 .section-bottom {
-  background-image: url("/static/css/images/background.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-color: rgba(230, 230, 230, 0.706);
 }
 
 .section h2 {
@@ -151,6 +148,14 @@ section {
   font-size: 1.4rem;
   padding-left: 0.75rem;
   padding-right: 3.75rem;
+}
+
+/* Navigation bar background */
+.nav-background {
+  background-image: url("/static/images/navbackground.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .row-1 {
