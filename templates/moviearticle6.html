@@ -1,14 +1,14 @@
 {% extends 'base.html' %} {% block title %}Contact - My Flask Site{% endblock %}
 {% block content %}
 <div class="container py-5">
-  <h1 class="text-center mb-5 scroll-reveal">Anderdingus</h1>
+  <h1 class="text-center mb-5 scroll-reveal">Toy Story 5 Surpasses $1 Billion Globally</h1>
 
   <div class="row">
     <!-- Map Column -->
     <div class="col-lg-6 mb-4 scroll-reveal">
       <div class="map-container">
         <img
-          src="{{ url_for('static', filename='images/information1.jpg') }}"
+          src="{{ url_for('static', filename='images/movieimage2.webp') }}"
           width="100%"
           height="600"
           style="border: 0"
@@ -19,16 +19,15 @@
       </div>
 
       <!-- Contact Info (moved below map) -->
-      <div class="contact-info mt-4">
-        <h4>Other Ways to Reach Us</h4>
+      <div class="additional-info mt-4 text-center">
+        <h4>Image Source</h4>
         <ul class="list-unstyled mb-0">
           <li class="mb-2">
-            <strong>📍</strong> Bradleys Head Road, Mosman, NSW 2088
-          </li>
-          <li class="mb-2"><strong>📞</strong> (02) 9969 2777</li>
+            <strong>🧩</strong>
+            <a href="https://www.theguardian.com/film/2025/nov/11/toy-story-5-teaser-trailer">The Guardian - Website</a>
+                      </li>
+          <li class="mb-2"><strong>📧</strong> *Email Us For Any Issues In Contact*</li>
           <li>
-            <strong>✉️</strong>
-            <a href="mailto:info@myflasksite.com">info@myflasksite.com</a>
           </li>
         </ul>
       </div>
@@ -37,23 +36,25 @@
     <!-- Read-Only Text Block -->
     <div class="col-lg-6 mb-4 scroll-reveal">
       <div class="contact-form">
-        <h4 class="mb-4">My name is Anderdingus</h4>
+        <h4 class="mb-4">Here's The Breakdown</h4>
 
   <div class="mb-3">
           <label for="cayenne-info" class="form-label">Information</label>
-          <textarea class="form-control" id="cayenne-info" rows="20" readonly>The first full trailer for Marvel Studios’ “Avengers: Doomsday” reportedly amassed a jaw-dropping 503 million views in 24 hours according to Variety. This makes it the second-biggest movie trailer launch of all time, behind only Sony’s Marvel film “Spider-Man: Brand New Day” at 719 million views.
+          <div class="form-control" style="white-space: pre-wrap; height: auto;">Disney and Pixar’s Toy Story 5 has officially surpassed $1 billion at the global box office, accumulating $448 million domestically and $573 million internationally for a $1.022 billion total. Reaching this milestone in its sixth week, the animated sequel directed by Andrew Stanton has overtaken The Super Mario Galaxy Movie and Michael to become the highest-grossing film of 2026.
 
-That’s not the only record it broke. It was also easily Disney’s most-viewed trailer in history, surpassing “Deadpool & Wolverine,” which had 365 million views – a number boosted by including the Super Bowl broadcast.
+Featuring returning voice legends Tom Hanks, Tim Allen, and Joan Cusack, the blockbuster marks the third entry in the franchise to top $1 billion. Backed by strong reviews and a massive $160 million opening, Toy Story 5 is now positioned to surpass Toy Story 4 as the highest-grossing release in the franchise's history.
 
-It also surpassed the release of the “Grand Theft Auto VI” trailer in May, which pulled in 475 million views.
 
-The trailer was released at the same time pre-sales for the film went online, or more specifically only the pre-sales for the non-IMAX ‘InfinityVision’ premium screens showing the film. These cinemas, which domestically make up around 1,000 screens of the film’s expected 4,000-screen opening weekend footprint, reportedly generated $16.5 million in advance ticket sales after the first day of availability.</textarea>
+
+
+
+<strong>*Note this summary is ai generated but factually checked beforehand*</strong></div>
         </div>
         <div class="mt-4">
   <h5>Related Links</h5>
   <ul class="list-unstyled">
-    <li><a href="https://filmspeak.net/news-2/2026/7/21/doomsday-approaches-first-trailer-for-latest-avengers-picture-drops-amid-a-tumultuous-development-process" target="_blank" rel="noopener">Filmspeak</a></li>
-    <li><a href="https://au.variety.com/2026/film/news/avengers-doomsday-trailer-views-disney-record-38772/" target="_blank" rel="noopener">Variety Australia</a></li>
+    <li><a href="https://www.imdb.com/news/ni65948515/" target="_blank" rel="noopener">IMDb - Toy Story 5 becomes the 3rd movie to surpass $1 billion</a></li>
+    <li><a href="https://variety.com/2026/film/box-office/toy-story-5-billion-dollar-box-office-1236818437/" target="_blank" rel="noopener">Variety - Toy Story 5 becomes the highest-grossing movie of the year</a></li>
     <li><a href="{{ url_for('movie2') }}">Back to Movie News</a></li>
   </ul>
 </div>
