@@ -96,13 +96,24 @@ section {
 }
 
 .contact-info {
-  padding: 20px;
+  padding: 47px;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 [data-bs-theme="dark"] .contact-info {
+  background: rgba(41, 41, 41, 0.5);
+}
+
+.additional-info {
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+[data-bs-theme="dark"] .additional-info {
   background: rgba(41, 41, 41, 0.5);
 }
 
