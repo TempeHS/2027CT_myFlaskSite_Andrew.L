@@ -98,11 +98,6 @@ def moviearticle6():
     return render_template("moviearticle6.html")
 
 
-@app.route("/information2")
-def information2():
-    return render_template("information2.html")
-
-
 @app.route("/resultspage")
 def resultspage():
     query = request.args.get("q", "").strip()
