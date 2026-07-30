@@ -13,34 +13,24 @@ def contact():
     return render_template("contact.html")
 
 
-@app.route("/services")
-def services():
-    return render_template("services.html")
-
-
-@app.route("/information")
-def information():
-    return render_template("information.html")
-
-
-@app.route("/signup")
-def signup():
-    return render_template("signup.html")
-
-
-@app.route("/articlefinder")
-def articlefinder():
-    return render_template("articlefinder.html")
-
-
 @app.route("/gaming1")
-def gaming1():
+def gamingweek1():
     return render_template("gaming1.html")
 
 
 @app.route("/movie1")
-def movie1():
+def movieweek1():
     return render_template("movie1.html")
+
+
+@app.route("/gaming2")
+def gamingweek2():
+    return render_template("gaming2.html")
+
+
+@app.route("/movie2")
+def movieweek2():
+    return render_template("movie2.html")
 
 
 @app.route("/aboutus")
@@ -106,16 +96,6 @@ def moviearticle5():
 @app.route("/moviearticle6")
 def moviearticle6():
     return render_template("moviearticle6.html")
-
-
-@app.route("/gaming2")
-def gaming2():
-    return render_template("gaming2.html")
-
-
-@app.route("/movie2")
-def movie2():
-    return render_template("movie2.html")
 
 
 @app.route("/information2")
