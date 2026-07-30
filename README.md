@@ -2,12 +2,12 @@
 
 | Field                          | Detail |
 | ------------------------------ | ------ |
-| **Website Title**              |        |
-| **Student Name(s)**            |        |
-| **Class / Course**             |        |
-| **Repository**                 |        |
-| **Live Site / Codespaces URL** |        |
-| **Date**                       |        |
+| **Website Title**              | MediON     |
+| **Student Name(s)**            |   Andrew Yong Ly     |
+| **Class / Course**             |     Year 9 Computer Technology   |
+| **Repository**                 |    2027CT_myFlaskSite_Andrew.L    |
+| **Live Site / Codespaces URL** |    https://musical-space-train-gxrvj646wwp29pwv.github.dev/    |
+| **Date**                       |  31/7/26      |
 
 > Your website is the main piece of work. This README is short on purpose — it
 > points a reader to your **2-minute walkthrough** and gives an honest
