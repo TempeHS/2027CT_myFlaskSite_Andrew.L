@@ -1,14 +1,14 @@
 {% extends 'base.html' %} {% block title %}Contact - My Flask Site{% endblock %}
 {% block content %}
 <div class="container py-5">
-  <h1 class="text-center mb-5 scroll-reveal">Anderdingus</h1>
+  <h1 class="text-center mb-5 scroll-reveal">Another Insomniac's Wolverine Trailer Releases!</h1>
 
   <div class="row">
     <!-- Map Column -->
     <div class="col-lg-6 mb-4 scroll-reveal">
       <div class="map-container">
         <img
-          src="{{ url_for('static', filename='images/information1.jpg') }}"
+          src="{{ url_for('static', filename='images/feature3.jpg') }}"
           width="100%"
           height="600"
           style="border: 0"
@@ -19,16 +19,15 @@
       </div>
 
       <!-- Contact Info (moved below map) -->
-      <div class="contact-info mt-4">
-        <h4>Other Ways to Reach Us</h4>
+      <div class="additional-info mt-4 text-center">
+        <h4>Image Source</h4>
         <ul class="list-unstyled mb-0">
           <li class="mb-2">
-            <strong>📍</strong> Bradleys Head Road, Mosman, NSW 2088
-          </li>
-          <li class="mb-2"><strong>📞</strong> (02) 9969 2777</li>
+            <strong>🐾</strong>
+            <a href="https://www.instagram.com/p/DbT9vpcEx7K/">EGW News - Website</a>
+                      </li>
+          <li class="mb-2"><strong>📧</strong> *Email Us For Any Issues In Contact*</li>
           <li>
-            <strong>✉️</strong>
-            <a href="mailto:info@myflasksite.com">info@myflasksite.com</a>
           </li>
         </ul>
       </div>
@@ -37,24 +36,25 @@
     <!-- Read-Only Text Block -->
     <div class="col-lg-6 mb-4 scroll-reveal">
       <div class="contact-form">
-        <h4 class="mb-4">My name is Anderdingus</h4>
+        <h4 class="mb-4">Here's What Was In It</h4>
 
   <div class="mb-3">
           <label for="cayenne-info" class="form-label">Information</label>
-          <textarea class="form-control" id="cayenne-info" rows="20" readonly>The first full trailer for Marvel Studios’ “Avengers: Doomsday” reportedly amassed a jaw-dropping 503 million views in 24 hours according to Variety. This makes it the second-biggest movie trailer launch of all time, behind only Sony’s Marvel film “Spider-Man: Brand New Day” at 719 million views.
+          <div class="form-control" style="white-space: pre-wrap; height: auto;">At San Diego Comic-Con 2026, Insomniac Games debuted a bloody new story trailer for *Marvel's Wolverine*, offering fans a deep look at the upcoming PS5 exclusive ahead of its September 15 release. Set in Earth-1048, the narrative follows Logan (voiced by Liam McIntyre) as he reunites with former Team X allies—including Sabretooth, Jean Grey, and Mystique—to protect vulnerable mutants hidden from society. 
 
-That’s not the only record it broke. It was also easily Disney’s most-viewed trailer in history, surpassing “Deadpool & Wolverine,” which had 365 million views – a number boosted by including the Super Bowl broadcast.
+The preview highlights a globe-trotting mission where Wolverine clashes with iconic Marvel adversaries such as Lady Deathstrike, Omega Red, and The Hand clan. Alongside the trailer reveal, Insomniac showcased key artwork, announced award-winning composer David Fleming, released an SDCC prequel digital comic, and teased a crossover suit from *MARVEL Tōkon: Fighting Souls*.
 
-It also surpassed the release of the “Grand Theft Auto VI” trailer in May, which pulled in 475 million views.
 
-The trailer was released at the same time pre-sales for the film went online, or more specifically only the pre-sales for the non-IMAX ‘InfinityVision’ premium screens showing the film. These cinemas, which domestically make up around 1,000 screens of the film’s expected 4,000-screen opening weekend footprint, reportedly generated $16.5 million in advance ticket sales after the first day of availability.</textarea>
+
+
+<strong>*Note this summary is ai generated but factually checked beforehand*</strong></div>
         </div>
         <div class="mt-4">
   <h5>Related Links</h5>
   <ul class="list-unstyled">
-    <li><a href="https://filmspeak.net/news-2/2026/7/21/doomsday-approaches-first-trailer-for-latest-avengers-picture-drops-amid-a-tumultuous-development-process" target="_blank" rel="noopener">Filmspeak</a></li>
-    <li><a href="https://au.variety.com/2026/film/news/avengers-doomsday-trailer-views-disney-record-38772/" target="_blank" rel="noopener">Variety Australia</a></li>
-    <li><a href="{{ url_for('gamingweek1') }}">Back to Gaming News</a></li>
+    <li><a href="https://gizmodo.com/marvels-wolverine-story-trailer-video-game-sdcc-2026-2000789986" target="_blank" rel="noopener">Gizmodo - Marvel's Wolverine Gets A New Trailer</a></li>
+    <li><a href="https://blog.playstation.com/2026/07/23/marvels-wolverine-story-trailer-new-art-composer-details-and-more/" target="_blank" rel="noopener">Playstation - Marvel's Wolverine Releases A Story Trailer</a></li>
+    <li><a href="{{ url_for('gamingweek1') }}">Back to Movie News</a></li>
   </ul>
 </div>
       </div>
