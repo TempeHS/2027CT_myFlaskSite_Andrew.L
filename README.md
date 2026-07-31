@@ -117,9 +117,9 @@ the coding aspect of the site.
 | Gaming Week 2 | `/gaming2` | A page that is connected through the mini-nav bar of Gaming Week 1, which showcases more article cards based on the specified week (E.G. 27/7/26).                  |
 | Movie Week 2 | `/movie2` | Connected through the Movie Week 1's mini-nav bar at the top, which also showcases the specified article pages.                 |
 | Game Article 1 | `/gamearticle1` | The game articles have a brief description of a topic, alongside an image and where the image was found. At the very end of the page, there is also links that lead to the same topic but from different websites.             |
-| Game Article 2 | `/gamearticle2` |(All have the same function as Movie article 1)                  | (All have the same function as Game Article 1)
-| Game Article 3 | `/gamearticle3` |(All have the same function as Movie article 1)                  | (All have the same function as Game Article 1)
-| Game Article 4 | `/gamearticle4` |(All have the same function as Movie article 1)                  | (All have the same function as Game Article 1)
+| Game Article 2 | `/gamearticle2` |(All have the same function as Game Article 1)                 | (All have the same function as Game Article 1)
+| Game Article 3 | `/gamearticle3` |(All have the same function as Game Article 1)               | (All have the same function as Game Article 1)
+| Game Article 4 | `/gamearticle4` |(All have the same function as Game Article 1)                  | (All have the same function as Game Article 1)
 | Movie Article 1 | `/moviearticle1` |  The movie articles have a brief description of a topic, alongside an image and where the image was found. At the very end of the page, there is also links that lead to the same topic but from different websites.                 |
 | Movie Article 2 | `/moviearticle2` |(All have the same function as Movie article 1)                  | (All have the same function as Movie article 1) 
 | Movie Article 3 | `/moviearticle3` |(All have the same function as Movie article 1)                  | (All have the same function as Movie article 1) 
