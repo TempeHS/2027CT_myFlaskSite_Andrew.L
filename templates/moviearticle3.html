@@ -1,14 +1,14 @@
 {% extends 'base.html' %} {% block title %}Contact - My Flask Site{% endblock %}
 {% block content %}
 <div class="container py-5">
-  <h1 class="text-center mb-5 scroll-reveal">Anderdingus</h1>
+  <h1 class="text-center mb-5 scroll-reveal">Kevin Hart's '72 Hour' Film Releases!</h1>
 
   <div class="row">
     <!-- Map Column -->
     <div class="col-lg-6 mb-4 scroll-reveal">
       <div class="map-container">
         <img
-          src="{{ url_for('static', filename='images/information1.jpg') }}"
+          src="{{ url_for('static', filename='images/movieimage5.avif') }}"
           width="100%"
           height="600"
           style="border: 0"
@@ -19,16 +19,15 @@
       </div>
 
       <!-- Contact Info (moved below map) -->
-      <div class="contact-info mt-4">
-        <h4>Other Ways to Reach Us</h4>
+      <div class="additional-info mt-4 text-center">
+        <h4>Image Source</h4>
         <ul class="list-unstyled mb-0">
           <li class="mb-2">
-            <strong>📍</strong> Bradleys Head Road, Mosman, NSW 2088
-          </li>
-          <li class="mb-2"><strong>📞</strong> (02) 9969 2777</li>
+            <strong>⚔️</strong>
+            <a href="https://screenrant.com/db/movie/72-hours-3693888/">Screen Rant - Website</a>
+                      </li>
+          <li class="mb-2"><strong>📧</strong> *Email Us For Any Issues In Contact*</li>
           <li>
-            <strong>✉️</strong>
-            <a href="mailto:info@myflasksite.com">info@myflasksite.com</a>
           </li>
         </ul>
       </div>
@@ -37,23 +36,23 @@
     <!-- Read-Only Text Block -->
     <div class="col-lg-6 mb-4 scroll-reveal">
       <div class="contact-form">
-        <h4 class="mb-4">My name is Anderdingus</h4>
+        <h4 class="mb-4">Here's The Scope</h4>
 
   <div class="mb-3">
           <label for="cayenne-info" class="form-label">Information</label>
-          <textarea class="form-control" id="cayenne-info" rows="20" readonly>The first full trailer for Marvel Studios’ “Avengers: Doomsday” reportedly amassed a jaw-dropping 503 million views in 24 hours according to Variety. This makes it the second-biggest movie trailer launch of all time, behind only Sony’s Marvel film “Spider-Man: Brand New Day” at 719 million views.
+          <div class="form-control" style="white-space: pre-wrap; height: auto;">Directed by Tim Story and released on Netflix, 72 Hours is a comedy starring Kevin Hart as Joe, a 40-something advertising executive who fears he is losing touch with youth culture and risking his career. When he is accidentally added to a group chat planning a bachelor party, Joe seizes the chance to tag along with a crew of Gen Z twentysomethings on a wild three-day trip to Miami.
 
-That’s not the only record it broke. It was also easily Disney’s most-viewed trailer in history, surpassing “Deadpool & Wolverine,” which had 365 million views – a number boosted by including the Super Bowl broadcast.
+The film follows Joe as he tries to keep up with the younger group—played by Marcello Hernández, Mason Gooding, Kam Patterson, and Ben Marshall—while attempting to revitalize his creative edge. Between chaotic nightlife, jet-ski mishaps, and unexpected run-ins with local law enforcement and drug dealers, Joe navigates the comedic divide between generations while reflecting on his own relationship with his girlfriend, played by Teyana Taylor.
 
-It also surpassed the release of the “Grand Theft Auto VI” trailer in May, which pulled in 475 million views.
+Combining slapstick humor with themes of aging, friendship, and self-discovery, 72 Hours offers a lighthearted look at modern bachelor party antics and intergenerational dynamics.
 
-The trailer was released at the same time pre-sales for the film went online, or more specifically only the pre-sales for the non-IMAX ‘InfinityVision’ premium screens showing the film. These cinemas, which domestically make up around 1,000 screens of the film’s expected 4,000-screen opening weekend footprint, reportedly generated $16.5 million in advance ticket sales after the first day of availability.</textarea>
+<strong>*Note this summary is ai generated but factually checked beforehand*</strong></div>
         </div>
         <div class="mt-4">
   <h5>Related Links</h5>
   <ul class="list-unstyled">
-    <li><a href="https://filmspeak.net/news-2/2026/7/21/doomsday-approaches-first-trailer-for-latest-avengers-picture-drops-amid-a-tumultuous-development-process" target="_blank" rel="noopener">Filmspeak</a></li>
-    <li><a href="https://au.variety.com/2026/film/news/avengers-doomsday-trailer-views-disney-record-38772/" target="_blank" rel="noopener">Variety Australia</a></li>
+    <li><a href="https://www.netflix.com/tudum/articles/top-10-july-20-2026">Tudum - Kevin Hart's 72 Hours Reaches No.1</a></li>
+    <li><a href="https://www.theguardian.com/film/2026/jul/24/72-hours-movie-review-kevin-hart" target="_blank" rel="noopener">The Guardian - 72 Hours Review</a></li>
     <li><a href="{{ url_for('movieweek1') }}">Back to Movie News</a></li>
   </ul>
 </div>
