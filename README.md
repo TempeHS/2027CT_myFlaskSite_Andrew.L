@@ -117,22 +117,22 @@ the coding aspect of the site.
 | Gaming Week 2 | `/gaming2` | A page that is connected through the mini-nav bar of Gaming Week 1, which showcases more article cards based on the specified week (E.G. 27/7/26).                  |
 | Movie Week 2 | `/movie2` | Connected through the Movie Week 1's mini-nav bar at the top, which also showcases the specified article pages.                 |
 | Game Article 1 | `/gamearticle1` | The game articles have a brief description of a topic, alongside an image and where the image was found. At the very end of the page, there is also links that lead to the same topic but from different websites.             |
-| Game Article 2 | `/gamearticle2` |                  | (All have the same function as Game Article 1)
-| Game Article 3 | `/gamearticle3` |                  | (All have the same function as Game Article 1)
-| Game Article 4 | `/gamearticle4` |                  | (All have the same function as Game Article 1)
+| Game Article 2 | `/gamearticle2` |(All have the same function as Movie article 1)                  | (All have the same function as Game Article 1)
+| Game Article 3 | `/gamearticle3` |(All have the same function as Movie article 1)                  | (All have the same function as Game Article 1)
+| Game Article 4 | `/gamearticle4` |(All have the same function as Movie article 1)                  | (All have the same function as Game Article 1)
 | Movie Article 1 | `/moviearticle1` |  The movie articles have a brief description of a topic, alongside an image and where the image was found. At the very end of the page, there is also links that lead to the same topic but from different websites.                 |
-| Movie Article 2 | `/moviearticle2` |                  | (All have the same function as Movie article 1)
-| Movie Article 3 | `/moviearticle3` |                  | (All have the same function as Movie article 1)
-| Movie Article 5 | `/moviearticle5` |                  | (All have the same function as Movie article 1)
-| Movie Article 6 | `/moviearticle6` |                  | (All have the same function as Movie article 1)
+| Movie Article 2 | `/moviearticle2` |(All have the same function as Movie article 1)                  | 
+| Movie Article 3 | `/moviearticle3` |(All have the same function as Movie article 1)                  | 
+| Movie Article 5 | `/moviearticle5` |(All have the same function as Movie article 1)                  |
+| Movie Article 6 | `/moviearticle6` |(All have the same function as Movie article 1)                  | 
 
 ### 3.3 Evaluation Against Your Intent (2–3 paragraphs)
 
-> Take each aim in your Statement of Intent and evaluate **how well the
-> delivered site meets it**. Where did you meet your intent? Where did you fall
-> short, and why? Support every judgement with evidence from your site.
+Overall, I have fulfilled most of my goals as stated in the Statement of Intent but underachieved concerning the quantity. MediON is a weekly destination for gaming and movie news that summarises the information, making it easier for the inquisitive viewer to read. It can be seen in my final website because the second navigation bar on the gaming and movie pages allows one to go through 'week 1' and 'week 2' to get back to previous articles. Every card has an image, a title, and a brief description (the Wolverine trailer and Dewdrop Dynasty are just some examples), with a 'learn more' button at the bottom leading to an external, more detailed resource, which follows my Statement of Intent, which states that MediON should be a bridge, summarising the main points but not substituting the primary sources.
 
-MediON is a website that has succesfully been created in providing articles 
+Concerning the overachievement, I have not reached the quantity goal. I intended to have 10-20 articles per week, but I only managed to create 9 cards by the deadline, with a few more left unfinished, which is evident by the red square placeholder instead of a card. It reflects my process pretty much because I spent most of the time fixing structural issues, such as improperly placed div tags, or making minor adjustments to images, buttons, and icons. Therefore, I did not have enough time to research and write more cards to meet the quantity goal. My final website does not fully represent the idea of having heaps of information in one place from the Statement of Intent because, although I have implemented the bridging between MediON and the external resources, there is still not enough variety in topics as I only managed to publish 9 cards. It does not yet show enough potential to bridge the gap between small indies and big companies by featuring both the triple A game Wolverine and the indie Metroidvania Dewdrop Dynasty.
+
+Regarding the audience and impact, MediON has fulfilled the intended impact because, on the website, the Dewdrop Dynasty indie Metroidvania and Wolverine have the same visual presentation, which means that both are prioritised and equally noticeable. This reflects my intent to impact the indie gaming industry by promoting smaller games/studios that bigger companies might ignore. Although I did not reach the quantity goal of 10-20 articles/features, the basic structure is created, so one could easily add more if needed. Thus, in terms of impact, it is fuffiled by being able to make smaller games and movies more noticeable and less dependent on big companies’ coverage. About the audience, I have not fully met the goal because it would take much longer to reach the quantity goal of 10-20. However, I have done everything necessary for the intended effect to take place, as the structure is already there, and a few more articles would impact the indie gaming industry as intended.
 
 ### 3.4 Overall Effectiveness (1–2 paragraphs)
 
@@ -156,6 +156,7 @@ In my opinion, I'd say that my website was pretty effective in delivering and ac
 | Flask         | Pallets Projects | BSD     | Web server and routing |
 | Heroicons              | tailwindlabs                 | MIT        | icons on my nav bar                       |
 | Lato font (google fonts)              | Łukasz Dziedzic     | SIL open font         | Consistent font throughout the website                       |
+| Hero images              | Multiple companies    | Fair Use       | Images for articles                  |
 
 ---
 
