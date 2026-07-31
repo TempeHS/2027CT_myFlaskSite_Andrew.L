@@ -39,8 +39,8 @@ This is the most important part of your documentation — it shows your website 
 
 | Field            | Detail |
 | ---------------- | ------ |
-| **Link / Embed** |        |
-| **Duration**     |        |
+| **Link / Embed** | https://drive.google.com/file/d/1XlzPKDDoUzFxgFRkARdi2S7wxL09kHSM/view?usp=sharing       |
+| **Duration**     | 2:08      |
 
 **Your walkthrough should show:**
 
@@ -121,10 +121,10 @@ the coding aspect of the site.
 | Game Article 3 | `/gamearticle3` |(All have the same function as Movie article 1)                  | (All have the same function as Game Article 1)
 | Game Article 4 | `/gamearticle4` |(All have the same function as Movie article 1)                  | (All have the same function as Game Article 1)
 | Movie Article 1 | `/moviearticle1` |  The movie articles have a brief description of a topic, alongside an image and where the image was found. At the very end of the page, there is also links that lead to the same topic but from different websites.                 |
-| Movie Article 2 | `/moviearticle2` |(All have the same function as Movie article 1)                  | 
-| Movie Article 3 | `/moviearticle3` |(All have the same function as Movie article 1)                  | 
-| Movie Article 5 | `/moviearticle5` |(All have the same function as Movie article 1)                  |
-| Movie Article 6 | `/moviearticle6` |(All have the same function as Movie article 1)                  | 
+| Movie Article 2 | `/moviearticle2` |(All have the same function as Movie article 1)                  | (All have the same function as Movie article 1) 
+| Movie Article 3 | `/moviearticle3` |(All have the same function as Movie article 1)                  | (All have the same function as Movie article 1) 
+| Movie Article 5 | `/moviearticle5` |(All have the same function as Movie article 1)                  |(All have the same function as Movie article 1) 
+| Movie Article 6 | `/moviearticle6` |(All have the same function as Movie article 1)                  | (All have the same function as Movie article 1) 
 
 ### 3.3 Evaluation Against Your Intent (2–3 paragraphs)
 
