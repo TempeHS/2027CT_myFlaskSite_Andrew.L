@@ -175,6 +175,10 @@ section {
   font-size: 1.7rem;
 }
 
+body {
+  font-family: "Lato", sans-serif;
+}
+
 .navbar .nav-link {
   font-size: 1.4rem;
   padding-left: 0.75rem;
