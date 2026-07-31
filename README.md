@@ -56,6 +56,10 @@ This is the most important written part of your documentation. Evaluate the
 website you **delivered** against the **Statement of Intent** you wrote during
 planning. Be honest and use evidence — point to a page, a feature or a test.
 
+Overall, I would say that I delivered a sufficient amount from what I stated in my statement of Intent. As previously, I had mentioned how I would create article pages by weekly gaming and movie news; this feature is prominent in my website, as a nav bar is used to showcase how the user can go back into certain weeks in order to view a certain article from prior weeks. In my article pages, there's also a brief summary (~100-200 word description) on the topic. There is also article links at the bottom of each page that redirects the user to more information about the matter.
+
+However, there was some features in which I was not able to succesfully do. An example is making at least 10 article cards per week about the latest movie and gaming news. I was only able to make 9 working pages on the matter, as a few of the pages were not yet completed and had a red square to indicate it.
+
 ### 3.1 Your Statement of Intent
 
 What is the website?
@@ -112,19 +116,15 @@ the coding aspect of the site.
 | Movie Week 1 | `/movie1` | It uses the same design as the Gaming Week 1 page, although it showcases movie article cards and allows the user to go forward or back in weeks.                 |
 | Gaming Week 2 | `/gaming2` | A page that is connected through the mini-nav bar of Gaming Week 1, which showcases more article cards based on the specified week (E.G. 27/7/26).                  |
 | Movie Week 2 | `/movie2` | Connected through the Movie Week 1's mini-nav bar at the top, which also showcases the specified article pages.                 |
-| Game Article 1 | `/gamearticle1` |                  |
-| Game Article 2 | `/gamearticle2` |                  |
-| Game Article 3 | `/gamearticle3` |                  |
-| Game Article 4 | `/gamearticle4` |                  |
-| Game Article 5 | `/gamearticle5` |                  |
-| Game Article 6 | `/gamearticle6` |                  |
-| Movie Article 1 | `/moviearticle1` |                  |
-| Movie Article 2 | `/moviearticle2` |                  |
-| Movie Article 3 | `/moviearticle3` |                  |
-| Movie Article 4 | `/moviearticle4` |                  |
-| Movie Article 5 | `/moviearticle5` |                  |
-| Movie Article 6 | `/moviearticle6` |                  |
-| Results Page | `/resultspage` |                  |
+| Game Article 1 | `/gamearticle1` | The game articles have a brief description of a topic, alongside an image and where the image was found. At the very end of the page, there is also links that lead to the same topic but from different websites.             |
+| Game Article 2 | `/gamearticle2` |                  | (All have the same function as Game Article 1)
+| Game Article 3 | `/gamearticle3` |                  | (All have the same function as Game Article 1)
+| Game Article 4 | `/gamearticle4` |                  | (All have the same function as Game Article 1)
+| Movie Article 1 | `/moviearticle1` |  The movie articles have a brief description of a topic, alongside an image and where the image was found. At the very end of the page, there is also links that lead to the same topic but from different websites.                 |
+| Movie Article 2 | `/moviearticle2` |                  | (All have the same function as Movie article 1)
+| Movie Article 3 | `/moviearticle3` |                  | (All have the same function as Movie article 1)
+| Movie Article 5 | `/moviearticle5` |                  | (All have the same function as Movie article 1)
+| Movie Article 6 | `/moviearticle6` |                  | (All have the same function as Movie article 1)
 
 ### 3.3 Evaluation Against Your Intent (2–3 paragraphs)
 
@@ -132,7 +132,7 @@ the coding aspect of the site.
 > delivered site meets it**. Where did you meet your intent? Where did you fall
 > short, and why? Support every judgement with evidence from your site.
 
-<!-- Write 2–3 paragraphs. -->
+MediON is a website that has succesfully been created in providing articles 
 
 ### 3.4 Overall Effectiveness (1–2 paragraphs)
 
@@ -140,7 +140,7 @@ the coding aspect of the site.
 > achieving its purpose for its target audience? Weigh what works against what
 > falls short, and state what you would improve to better meet your intent.
 
-<!-- Write 1–2 paragraphs. -->
+In my opinion, I'd say that my website was pretty effective in delivering and achieving its purpose for the target audience. This is due to how I had added some indie articles, alongside articles with big titles, which is a nice even mix of topics. This allows people to find new content that they have never seen before and possibly find a new game they will want to watch or buy. However, I'd say that I don't have a large amount of article cards for viewers to truly see more of the niche games or movies, as I currently have less than 10 article cards inside my website. This is something I would very much improve on to meet my intent at the start, in order to fully make a bridge between indie content and mainstream content.
 
 ---
 
@@ -154,8 +154,8 @@ the coding aspect of the site.
 | ------------- | ---------------- | ------- | ---------------------- |
 | Bootstrap     | Bootstrap team   | MIT     | Layout and components  |
 | Flask         | Pallets Projects | BSD     | Web server and routing |
-|               |                  |         |                        |
-|               |                  |         |                        |
+| Heroicons              | tailwindlabs                 | MIT        | icons on my nav bar                       |
+| Lato font (google fonts)              | Łukasz Dziedzic     | SIL open font         | Consistent font throughout the website                       |
 
 ---
 
